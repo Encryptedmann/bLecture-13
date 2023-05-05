@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 13 | Nav</title>
+    <link rel="shortcut icon" href="bootstrap-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-3">
+        <h2> Nav links - Pills</h2>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">PC/Laptop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Phone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+            <br>
+
+            <h2> Nav - justified pill</h2>
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">PC/Laptop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tab</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Phone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+          </ul>
+          <br>
+
+          <h2> Nav - Justified tab and Dropdown</h2>
+          <ul class="nav nav-tabs nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">PC/Laptop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tab</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Phone</a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="#">Iphone</a></li>
+                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                    <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+          </ul>
+    </div>
+    <br>
+    <div class="container">
+        <div class="container mt-3">
+            <h2>Toggleable Tabs</h2>
+            <br>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Computer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Tab</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Phone</a>
+              </li>
+            </ul>
+          
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="home" class="container tab-pane active"><br>
+                <h3>Computer</h3>
+                <p>an electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program.</p>
+              </div>
+              <div id="menu1" class="container tab-pane fade"><br>
+                <h3>Tab</h3>
+                <p>A tablet computer, commonly shortened to tablet, is a mobile device, typically with a mobile operating system and touchscreen display processing circuitry, and a rechargeable battery in a single, thin and flat package.</p>
+              </div>
+              <div id="menu2" class="container tab-pane fade"><br>
+                <h3>Phone</h3>
+                <p>A smartphone is a portable computer device that combines mobile telephone functions and computing functions into one unit.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
